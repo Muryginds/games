@@ -11,7 +11,6 @@ import my.company.game.enums.Direction;
 import my.company.game.enums.Moveable;
 import my.company.menu.GameMenu;
 import my.company.utils.ColorText;
-import my.company.utils.UserResponse;
 
 @Data
 public class Game implements Serializable {
@@ -27,8 +26,6 @@ public class Game implements Serializable {
 
   private void initialiseGame() {
     prepareLocations();
-    UserResponse response = new UserResponse();
-    response.getResponse(this);
   }
 
   private void prepareLocations() {

@@ -44,7 +44,9 @@ public class StartMenu extends Menu {
         System.out.println("Starting the game...");
         System.out.println("You are a girl named Red Hut. Mother wakes you up early today, "
             + "she wants you to bring a fresh pie from Grand Mother.");
-        new Game(newPlayer);
+        Game game = new Game(newPlayer);
+        UserResponse response = new UserResponse();
+        response.getResponse(game);
         break;
     }
   }
